@@ -14,8 +14,8 @@ const PurpleGradientDefs = (props: Props) => {
           y2="13.75"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9D5AFF" />
-          <stop offset="0.713542" stop-color="#C393FF" />
+          <stop stopColor="#9D5AFF" />
+          <stop offset="0.713542" stopColor="#C393FF" />
         </linearGradient>
       </defs>
     </svg>

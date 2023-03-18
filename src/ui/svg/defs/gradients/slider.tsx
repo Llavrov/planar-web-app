@@ -19,8 +19,8 @@ const SliderTabGradientDefs = (props: Props) => {
           y2="57.2453"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4E4FFF" />
-          <stop offset="1" stop-color="#9D5AFF" />
+          <stop stopColor="#4E4FFF" />
+          <stop offset="1" stopColor="#9D5AFF" />
         </linearGradient>
       </defs>
     </svg>

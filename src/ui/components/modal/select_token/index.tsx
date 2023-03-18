@@ -2,6 +2,7 @@ import React from 'react'
 import { SearchInput } from '../../input/search'
 import { Slider } from '../../slider'
 import { BaseModal } from '../base'
+import Balances from './balances'
 import Coins from './coins'
 
 type Props = {}
@@ -17,6 +18,7 @@ export const ModalSelectToken = (props: Props) => {
       <SearchInput placeholder="Search for Token" />
       <Coins />
       <Slider tabs={Tabs} />
+      <Balances />
     </BaseModal>
   )
 }
