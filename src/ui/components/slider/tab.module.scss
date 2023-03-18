@@ -1,0 +1,12 @@
+.tabIcon {
+  & > path {
+    fill: theme("colors.tetriary");
+    transition: fill 0.2s ease-in-out;
+  }
+}
+
+.tabIconActive {
+  & > path {
+    fill: url(#purple-gradient);
+  }
+}
