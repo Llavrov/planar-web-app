@@ -32,10 +32,10 @@ export const SliderTab = ({
   return (
     <section
       ref={ref}
+      onClick={handleClick}
       className="flex items-center gap-[8px] px-[16px] py-[12px]"
     >
       <a
-        onClick={handleClick}
         className={classNames(
           "cursor-pointer text-text-sm text-tetriary transition-colors hover:text-secondary",
           {

@@ -14,7 +14,7 @@ enum Tabs {
 
 export const ModalSelectToken = (props: Props) => {
   return (
-    <BaseModal title="Select a token">
+    <BaseModal title="Select a token" maxWidth="max-w-lg" maxHeight="max-h-[600px]">
       <SearchInput placeholder="Search for Token" />
       <Coins />
       <Slider tabs={Tabs} />

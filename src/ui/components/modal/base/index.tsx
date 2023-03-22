@@ -2,11 +2,11 @@ import { CloseIcon } from "@/ui/buttons/close";
 import React from "react";
 
 
-type Props = { title: string; description?: string; children: React.ReactNode };
+type Props = { title: string; description?: string; children: React.ReactNode, maxWidth: string, maxHeight: string };
 
-export const BaseModal = ({ title, description, children }: Props) => {
+export const BaseModal = ({ title, description, children, maxWidth, maxHeight }: Props) => {
   return (
-    <section className="p-4 flex backdrop-blur-bg flex-col gap-4 w-full rounded-3 bg-secondary max-w-lg h-full max-h-[600px]">
+    <section className={`p-4 flex backdrop-blur-bg flex-col gap-4 w-full rounded-3 border border-white10 border-solid  bg-secondary ${maxHeight} ${maxWidth}`}>
       <header className="flex flex-col w-full">
         <section className="flex w-full items-center justify-between">
           <h1 className="text-heading-s md:text-heading-l font-bold text-primary">
@@ -14,7 +14,7 @@ export const BaseModal = ({ title, description, children }: Props) => {
           </h1>
           <CloseIcon />
         </section>
-        {description && <p className="text-text-m mt-3">{description}</p>}
+        {description && <p className="text-text-m mt-3 text-tetriary">{description}</p>}
       </header>
       {children}
     </section>

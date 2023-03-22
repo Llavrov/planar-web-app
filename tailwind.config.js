@@ -11,6 +11,13 @@ module.exports = {
         primary: 'rgba(255, 255, 255, 0.96)',
         secondary: 'rgba(255, 255, 255, 0.8)',
         tetriary: 'rgba(255, 255, 255, 0.5)',
+        white10: 'rgba(255, 255, 255, 0.1)',
+
+        'primary-button': 'linear-gradient(92.5deg, rgba(78, 79, 255, 0.6) -4.31%, rgba(157, 90, 255, 0.6) 99.24%)',
+        'primary-button-hover': 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(92.5deg, rgba(78, 79, 255, 0.6) -4.31%, rgba(157, 90, 255, 0.6) 99.24%)',
+        'primary-button-error': 'linear-gradient(139.83deg, #6B45B0 13.25%, #B2344A 89.93%)',
+        'secondary-button': 'rgba(255, 255, 255, 0.08)',
+        'secondary-button-hover': 'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08))',
         'input-text': 'rgba(255, 255, 255, 0.6)',
         'brand-gradient': 'linear-gradient(140deg, #4E4FFF 13.25%, #9D5AFF 90%)',
         'purple-gradient': 'linear-gradient(140deg, #9D5AFF 13.25%, #C393FF 68%)',
@@ -26,13 +33,19 @@ module.exports = {
         slider: 'rgba(246, 246, 246, 0.04)',
         artboard: 'rgba(20, 20, 20, 1)',
         'page-bg': 'rgba(13, 13, 13, 1)',
-        
         'accent-blue': 'rgba(78, 79, 255, 1)',
         'accent-purple': 'rgba(157, 90, 255, 1)',
       },
       borderColor: {
         primary: 'rgba(255, 255, 255, 0.1)',
       },
+      maxWidth: {
+        'card_m': '245px',
+        'modal_lg': '552px',
+      },
+      minHeight: {
+        'card_m': '216px',
+      }
     },
     spacing: {
       px: '1px',
