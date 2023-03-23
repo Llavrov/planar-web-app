@@ -1,9 +1,7 @@
 import React from "react";
+import {TCoin} from "@/ui/components/modal/select_token/coins/index";
 
-type Props = {
-  icon: React.ReactNode;
-  label: string;
-};
+type Props = {} & TCoin;
 
 const Coin = ({ icon, label }: Props) => {
   return (

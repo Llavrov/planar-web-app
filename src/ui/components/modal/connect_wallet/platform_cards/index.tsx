@@ -2,7 +2,6 @@ import React from 'react';
 import {BaseModal} from "@/ui/components/modal/base";
 import {CoinBaseIcon, MetamaskIcon, WalletConnectIcon} from "@/ui/svg/platforms";
 import {PlatformCard} from "@/ui/components/modal/connect_wallet/platform_cards/PlatformCard";
-import Coins from "@/ui/components/modal/select_token/coins";
 import {Button} from "@/ui/buttons/Button";
 
 type TPlatformCard = {
@@ -37,7 +36,6 @@ export function PlatformCardsModalContent() {
             title={"Connect Wallet"}
             description={"You need to connect your Web3 wallet to access the swap features"}
             maxWidth={'sm:max-w-modal_lg'}
-            maxHeight={'sm:max-h-[656px]'}
         >
             <section className="flex flex-wrap flex-row gap-4">
                 {

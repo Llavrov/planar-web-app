@@ -27,6 +27,8 @@ module.exports = {
         tertiary: 'rgba(195, 195, 195, 0.08)',
         slider: 'rgba(246, 246, 246, 0.04)',
         artboard: 'rgba(20, 20, 20, 1)',
+        dark: 'rgba(23, 23, 23, 0.3)',
+        primaryCard: 'rgba(255, 255, 255, 0.96)',
         'page-bg': 'rgba(13, 13, 13, 1)',
         'accent-blue': 'rgba(78, 79, 255, 1)',
         'accent-purple': 'rgba(157, 90, 255, 1)',
@@ -41,6 +43,7 @@ module.exports = {
       },
       borderColor: {
         primary: 'rgba(255, 255, 255, 0.1)',
+        secondary: 'rgba(255, 255, 255, 0.04)',
       },
       maxWidth: {
         'card_m': '245px',
@@ -65,10 +68,10 @@ module.exports = {
     },
     fontSize: {
       'heading-ss': ['18px', { fontWeight: '500' }],
-      'heading-s': ['20px', { fontWeight: '600' }],
+      'heading-s': ['20px', { fontWeight: '600', lineHeight: '24px' }],
       'heading-m': ['24px', { fontWeight: '600' }],
       'heading-l': ['32px', { fontWeight: '600' }],
-      'text-s': ['12px'],
+      'text-s': ['12px', { lineHeight: '15px' }],
       'text-sm': ['14px'],
       'text-m': ['16px'],
       'text-l': ['18px'],

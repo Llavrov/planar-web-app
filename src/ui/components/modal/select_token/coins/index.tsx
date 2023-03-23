@@ -11,7 +11,12 @@ import USDTIcon from "@/ui/icons/coins/usdt.svg";
 import WBTCIcon from "@/ui/icons/coins/wbtc.svg";
 import WICCCoin from "@/ui/icons/coins/wicc.svg";
 
-const coins = [
+export type TCoin = {
+  icon: React.ReactNode;
+  label: string;
+}
+
+export const COINS = [
   {
     icon: <ETHIcon />,
     label: "ETH",
@@ -51,7 +56,7 @@ type Props = {};
 const Coins = (props: Props) => {
   return (
     <div className="flex gap-3 w-full flex-wrap">
-      {coins.map((coin, index) => (
+      {COINS.map((coin, index) => (
         <Coin key={index} icon={coin.icon} label={coin.label} />
       ))}
     </div>

@@ -2,7 +2,13 @@ import { CloseIcon } from "@/ui/buttons/close";
 import React from "react";
 
 
-type Props = { title: string; description?: string; children: React.ReactNode, maxWidth: string, maxHeight: string };
+type Props = {
+    title: string;
+    children: React.ReactNode,
+    description?: string;
+    maxWidth?: string,
+    maxHeight?: string
+};
 
 export const BaseModal = ({ title, description, children, maxWidth, maxHeight }: Props) => {
   return (

@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="added a button component">
+    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="added a Swap Widget and some pages with widget variations">
+      <change afterPath="$PROJECT_DIR$/src/pages/get-bonus.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/liquidity-pool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/select-token.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/trade.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/buttons/Switcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/buttons/retry.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/buttons/settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/Balance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/LinkToConnect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/LiquidityPoolContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/Price.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/PricePercents.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SelectPool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapLockAndGetBonusContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/TokenIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/swap.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/svg/arrow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/svg/logotype/logotype.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/PlatformCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/PlatformCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/coin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/coin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/icons/ui/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/icons/ui/download.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,8 +141,17 @@
       <workItem from="1679435371341" duration="864000" />
       <workItem from="1679471527614" duration="15193000" />
       <workItem from="1679514892275" duration="2541000" />
-      <workItem from="1679572774342" duration="3977000" />
+      <workItem from="1679572774342" duration="4196000" />
+      <workItem from="1679586773506" duration="13037000" />
     </task>
+    <task id="LOCAL-00001" summary="added a button component">
+      <created>1679578441706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679578441706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added a button component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a button component" />
+    <MESSAGE value="added a Swap Widget and some pages with widget variations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a Swap Widget and some pages with widget variations" />
   </component>
 </project>
