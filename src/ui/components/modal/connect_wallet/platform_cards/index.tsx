@@ -7,7 +7,7 @@ import {Button} from "@/ui/buttons/Button";
 
 type TPlatformCard = {
     title: string,
-    description: string,
+    description: JSX.Element,
     img: JSX.Element,
 }
 
@@ -16,17 +16,17 @@ type TPlatformCardArray = Array<TPlatformCard>;
 const PLATFORM_CARDS: TPlatformCardArray = [
     {
         title: "MetaMask",
-        description: "If you have Metamask wallet in your browser, click here",
+        description: <>If you have Metamask<br/> wallet in your browser,<br/> click here</>,
         img: MetamaskIcon(),
     },
     {
         title: "WalletConnect",
-        description: "If you have rainbow, trust wallet or other wallet on your phone, click here",
+        description: <>If you have rainbow, trust<br/> wallet or other wallet on<br/> your phone, click here</>,
         img: WalletConnectIcon(),
     },
     {
         title: "Coinbase Wallet",
-        description: "If you use coinbase wallet, click here",
+        description: <>If you use coinbase wallet,<br/> click here</>,
         img: CoinBaseIcon(),
     }
 ];
@@ -37,7 +37,7 @@ export function PlatformCardsModalContent() {
             title={"Connect Wallet"}
             description={"You need to connect your Web3 wallet to access the swap features"}
             maxWidth={'sm:max-w-modal_lg'}
-            maxHeight={'sm:max-h-[654px]'}
+            maxHeight={'sm:max-h-[656px]'}
         >
             <section className="flex flex-wrap flex-row gap-4">
                 {
@@ -46,7 +46,13 @@ export function PlatformCardsModalContent() {
                     ))
                 }
             </section>
-            <Button title={'Don’t have a wallet, watch our tutorial on wallets'} onClick={() => console.log('click')} />
+            <Button
+                type={'secondary'}
+                size={'s'}
+                icon={'video'}
+                title={'Don’t have a wallet, watch our tutorial on wallets'}
+                onClick={() => console.log('click')}
+            />
         </BaseModal>
     )
 }

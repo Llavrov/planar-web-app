@@ -3,7 +3,7 @@ import React from 'react';
 type Props = {
     img: JSX.Element,
     title: string,
-    description: string,
+    description: JSX.Element,
 };
 
 export function PlatformCard({img, title, description}: Props) {

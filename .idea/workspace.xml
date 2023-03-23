@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="added a button component">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/slider/tab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/slider/tab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/PlatformCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/PlatformCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
       <recent name="$PROJECT_DIR$/src/ui/svg" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start:web-app">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start:web-app" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start:web-app" />
         <item itemvalue="npm.build:web-app" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
@@ -113,11 +114,17 @@
       <option name="presentableId" value="Default" />
       <updated>1679435368937</updated>
       <workItem from="1679435371341" duration="864000" />
-      <workItem from="1679471527614" duration="12812000" />
+      <workItem from="1679471527614" duration="15193000" />
+      <workItem from="1679514892275" duration="2541000" />
+      <workItem from="1679572774342" duration="3977000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added a button component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a button component" />
   </component>
 </project>
