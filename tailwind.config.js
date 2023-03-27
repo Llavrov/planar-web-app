@@ -29,6 +29,8 @@ module.exports = {
         artboard: 'rgba(20, 20, 20, 1)',
         dark: 'rgba(23, 23, 23, 0.3)',
         primaryCard: 'rgba(255, 255, 255, 0.96)',
+        'account-primary': 'rgba(255, 255, 255, 0.08)',
+        'account-bg': 'rgba(248, 213, 168, 1)',
         'page-bg': 'rgba(13, 13, 13, 1)',
         'accent-blue': 'rgba(78, 79, 255, 1)',
         'accent-purple': 'rgba(157, 90, 255, 1)',
@@ -40,6 +42,7 @@ module.exports = {
         'brand-gradient': 'linear-gradient(140deg, #4E4FFF 13.25%, #9D5AFF 90%)',
         'purple-gradient': 'linear-gradient(140deg, #9D5AFF 13.25%, #C393FF 68%)',
         'error-gradient': 'linear-gradient(140deg, #6B45B0 13.25%, #B2344A 90%)',
+        'black-gradient': 'linear-gradient(180deg, rgba(23, 23, 23, 0.5) 0%, rgba(23, 23, 23, 0) 100%)',
       },
       borderColor: {
         primary: 'rgba(255, 255, 255, 0.1)',

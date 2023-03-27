@@ -1,39 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="added a Swap Widget and some pages with widget variations">
-      <change afterPath="$PROJECT_DIR$/src/pages/get-bonus.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/liquidity-pool.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/select-token.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/trade.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/buttons/Switcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/buttons/retry.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/buttons/settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/Balance.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/LinkToConnect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/LiquidityPoolContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/Price.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/PricePercents.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SelectPool.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapLockAndGetBonusContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/TokenIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/swap.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/svg/arrow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/svg/logotype/logotype.tsx" afterDir="false" />
+    <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/buttons/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/coin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/coin.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/coins/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/icons/ui/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/icons/ui/download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/trade.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/trade.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/svg/platforms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/svg/platforms/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +119,10 @@
       <workItem from="1679471527614" duration="15193000" />
       <workItem from="1679514892275" duration="2541000" />
       <workItem from="1679572774342" duration="4196000" />
-      <workItem from="1679586773506" duration="13037000" />
+      <workItem from="1679586773506" duration="14598000" />
+      <workItem from="1679756790401" duration="7000" />
+      <workItem from="1679912645122" duration="3131000" />
+      <workItem from="1679922129237" duration="10163000" />
     </task>
     <task id="LOCAL-00001" summary="added a button component">
       <created>1679578441706</created>
@@ -151,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679578441706</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a Swap Widget and some pages with widget variations">
+      <created>1679612742865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679612742865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

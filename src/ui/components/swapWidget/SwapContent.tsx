@@ -27,7 +27,7 @@ export function SwapContent({ error }: Props) {
                 type={error ? 'error' : 'primary'}
                 size={'l'}
                 fontSize={'text-text-s'}
-                onClick={() => console.log('Connect Wallet to swap')}
+                onClick={() => alert('Connect Wallet to swap')}
                 title={error ? CHANGE_TOKENS : CONNECT_WALLET}
             />
             <LinkToConnect title={'Connect wallet to farm this pair'} href={'/trade'}/>
