@@ -51,25 +51,28 @@ const options = {
     }
 };
 
+const initialState = {
+    labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15'],
+    datasets: [{
+        data: [9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27, 9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27],
+        fill: false,
+        backgroundColor: 'rgba(0,0,0,0.9)',
+        borderColor: '#9D5AFF',
+        borderWidth: 2,
+        tension: 0.5,
+        pointRadius: .5
+    }]
+}
+
 export function ChartComponent() {
-    const [chartData, setChartData] = useState({
-        datasets: []
-    });
+    const [chartData, setChartData] = useState(initialState);
 
     const [chartOptions, setChartOptions] = useState(options);
 
     useEffect(() => {
-        const canvas: HTMLCanvasElement = document.getElementById('canvas') as HTMLCanvasElement;
-        const ctx: CanvasRenderingContext2D = canvas?.getContext("2d");
-
-        let gradient = ctx?.createLinearGradient(0, 0, 0, 50);
-        gradient?.addColorStop(0, 'rgb(255, 10, 86, 0.9)');
-        gradient?.addColorStop(1, 'rgb(255, 10, 86, 0.1)');
-
         setChartData({
             labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15'],
-            datasets: [
-                {
+            datasets: [{
                     data: [9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27, 9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27],
                     fill: false,
                     backgroundColor: 'rgba(0,0,0,0.9)',
@@ -77,8 +80,7 @@ export function ChartComponent() {
                     borderWidth: 2,
                     tension: 0.5,
                     pointRadius: .5
-                }
-            ]
+                }]
         });
         setChartOptions(options);
     }, []);
@@ -89,6 +91,7 @@ export function ChartComponent() {
                 <Slider tabs={Tabs} />
                 <CloseIcon onClick={() => ''} />
             </section>
+            {/* @ts-ignore */}
             <Line id={'canvas'} data={chartData} options={options}/>
             <section className="absolute w-full h-full overflow-hidden -z-[1]">
                 <ChartBackground />

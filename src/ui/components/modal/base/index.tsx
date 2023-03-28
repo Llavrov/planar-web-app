@@ -1,5 +1,5 @@
 import { CloseIcon } from "@/ui/buttons/close";
-import React from "react";
+import React, {MouseEventHandler} from "react";
 
 
 type Props = {
@@ -13,6 +13,7 @@ type Props = {
 
 export const BaseModal = ({ title, onClose, description, children, maxWidth, maxHeight }: Props) => {
 
+  // @ts-ignore
   const handleClickBaseModal = (event) => {
     event.stopPropagation();
   }

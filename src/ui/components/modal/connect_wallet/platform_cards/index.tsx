@@ -33,6 +33,7 @@ const PLATFORM_CARDS: TPlatformCardArray = [
 export function PlatformCardsModalContent() {
     return (
         <BaseModal
+            onClose={() => ''}
             title={"Connect Wallet"}
             description={"You need to connect your Web3 wallet to access the swap features"}
             maxWidth={'sm:max-w-modal_lg'}

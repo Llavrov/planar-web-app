@@ -8,7 +8,7 @@ import {ModalSelectToken} from "@/ui/components/modal/select_token";
 export default function SelectToken() {
     return (
         <ModalContainer show={true} onClose={() => console.log('click')}>
-            <ModalSelectToken />
+            <ModalSelectToken onClose={() => ''} />
         </ModalContainer>
     );
 }

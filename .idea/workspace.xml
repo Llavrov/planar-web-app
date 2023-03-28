@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/select-token.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/select-token.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/chart/Chart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/connect_wallet/platform_cards/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/LiquidityPoolContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/LiquidityPoolContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapLockAndGetBonusContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapLockAndGetBonusContent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +124,8 @@
       <workItem from="1679912645122" duration="3131000" />
       <workItem from="1679922129237" duration="18486000" />
       <workItem from="1680008435505" duration="362000" />
+      <workItem from="1680009441632" duration="183000" />
+      <workItem from="1680020140000" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="added a button component">
       <created>1679578441706</created>

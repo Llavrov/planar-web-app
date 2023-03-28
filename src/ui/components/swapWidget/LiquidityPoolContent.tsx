@@ -22,9 +22,9 @@ export function LiquidityPoolContent({ error }: Props) {
                 <RetryIcon />
             </section>
             <section className="flex flex-col gap-1">
-                <SwapCard coin={fromCoin} />
+                <SwapCard coin={fromCoin} setModal={() => ''} />
                 <SwapIcon type={error ? 'error' : 'transfer'} />
-                <SwapCard coin={toCoin} bottom={true}/>
+                <SwapCard coin={toCoin} bottom={true} setModal={() => ''}/>
             </section>
             <SelectPool />
             <section className="text-text-s text-tetriary">

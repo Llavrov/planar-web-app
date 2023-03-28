@@ -20,9 +20,9 @@ export function SwapLockAndGetBonusContent({ error }: Props) {
     return (
         <>
             <section className={`flex flex-col gap-1`}>
-                <SwapCard coin={fromCoin} />
+                <SwapCard coin={fromCoin} setModal={() => ''} />
                 <SwapIcon type={error ? 'error' : 'transfer'} />
-                <SwapCard coin={toCoin} bottom={true}/>
+                <SwapCard coin={toCoin} bottom={true} setModal={() => ''} />
             </section>
             <section className="flex flex-row items-center gap-2">
                 <span className="flex flex-row gap-2 text-tetriary text-text-s">Lock and get bonus <InfoIcon className={classNames("h-3 w-3 cursor-pointer ", styles.Icon)} /></span>

@@ -23,7 +23,7 @@ export const ModalContainer = ({children, show, onClose}: Props) => {
   if (isBrowser) {
     return ReactDOM.createPortal(
         modalContent,
-        document.getElementById("modal-root")
+        document.getElementById("modal-root") as Element | DocumentFragment
     );
   } else {
     return null;
