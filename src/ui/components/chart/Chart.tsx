@@ -87,7 +87,7 @@ export function ChartComponent() {
         <section className="flex relative items-center justify-center bg-secondary rounded-2 h-full shrink">
             <section className="absolute top-4 left-4 flex justify-between w-[calc(100%-40px)]">
                 <Slider tabs={Tabs} />
-                <CloseIcon />
+                <CloseIcon onClick={() => ''} />
             </section>
             <Line id={'canvas'} data={chartData} options={options}/>
             <section className="absolute w-full h-full overflow-hidden -z-[1]">
