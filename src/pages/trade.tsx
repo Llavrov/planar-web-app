@@ -31,7 +31,7 @@ export default function Trade() {
                 </section>
                 <section className="flex flex-row  gap-4 justify-center items-center w-full">
                     <SwapWidget title={"Swap"} icons={icons}>
-                        <SwapContent error={true} />
+                        <SwapContent error={false} setModal={() => console.log('')} />
                     </SwapWidget>
                     <ChartContainer />
                 </section>

@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb5ee763-1969-40d0-9603-d4fcf39ab618" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/get-bonus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/get-bonus.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/liquidity-pool.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/liquidity-pool.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/select-token.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/select-token.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/trade.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/trade.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/bg/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/bg/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/buttons/close.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/buttons/close.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/chart/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/chart/Chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/chart/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/chart/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/header/AccountIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/header/AccountIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/base/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/modal/select_token/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/modal/select_token/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/SwapContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/TokenIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/TokenIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/swapWidget/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/swapWidget/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/svg/defs/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/svg/defs/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +21,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/Users/lionarr/WebstormProjects/ui/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/lionarr/WebstormProjects/ui/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ui/svg" />
@@ -137,7 +115,7 @@
       <workItem from="1679586773506" duration="14598000" />
       <workItem from="1679756790401" duration="7000" />
       <workItem from="1679912645122" duration="3131000" />
-      <workItem from="1679922129237" duration="17966000" />
+      <workItem from="1679922129237" duration="18486000" />
     </task>
     <task id="LOCAL-00001" summary="added a button component">
       <created>1679578441706</created>

@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 type Props = {
   className?: string;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export const CloseIcon = ({ onClick, className }: Props) => {

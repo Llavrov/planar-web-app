@@ -9,7 +9,7 @@ import {CloseIcon} from "@/ui/buttons/close";
 export default function LiquidityPool() {
     return (
         <section className="fixed flex justify-center items-center w-screen h-screen top-0 left-0">
-            <SwapWidget title={"Create new Liquidity pool"} icons={<CloseIcon/>}>
+            <SwapWidget title={"Create new Liquidity pool"} icons={<CloseIcon/>} >
                 <LiquidityPoolContent />
             </SwapWidget>
         </section>

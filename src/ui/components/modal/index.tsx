@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 
-type Props = { children?: React.ReactNode, show: boolean, onClose: () => void };
+type Props = {
+  children?: React.ReactNode,
+  show?: boolean,
+  onClose?: () => void
+};
 
 export const ModalContainer = ({children, show, onClose}: Props) => {
   const [isBrowser, setIsBrowser] = useState(false);
