@@ -5,16 +5,18 @@ import { BaseModal } from '../base'
 import Balances from './balances'
 import Coins from './coins'
 
-type Props = {}
+type Props = {
+    onClose: () => void;
+}
 
 enum Tabs {
   All = "all",
   Saved = "saved",
 }
 
-export const ModalSelectToken = (props: Props) => {
+export const ModalSelectToken = ({onClose}: Props) => {
   return (
-    <BaseModal title="Select a token" maxWidth="max-w-lg" maxHeight="max-h-[600px]">
+    <BaseModal onClose={onClose} title="Select a token" maxWidth="max-w-lg" maxHeight="max-h-[600px]">
       <SearchInput placeholder="Search for Token" />
       <Coins />
       <Slider tabs={Tabs} />

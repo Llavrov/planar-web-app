@@ -1,4 +1,6 @@
 import React from 'react';
+import {ModalSelectToken} from "@/ui/components/modal/select_token";
+import {ModalContainer} from "@/ui/components/modal";
 
 type Props = {
     title: string;
@@ -12,7 +14,7 @@ type Props = {
 function SwapWidget({ title, children, icons, maxWidth = 'max-w-[460px]', maxHeight }: Props) {
 
     return (
-        <section className={`p-4 flex backdrop-blur-bg flex-col gap-4 w-full rounded-3 border border-white10 border-solid  bg-secondary ${maxHeight} ${maxWidth}`}>
+        <section className={`p-4 flex min-w-[300px] backdrop-blur-bg flex-col gap-4 w-full rounded-3 border border-white10 border-solid  bg-secondary ${maxHeight} ${maxWidth}`}>
             <header className="flex flex-col w-full">
                 <section className="flex w-full items-center justify-between">
                     <h1 className="text-heading-ss font-bold text-primary">

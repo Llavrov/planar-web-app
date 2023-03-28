@@ -8,17 +8,10 @@ import {SwapLockAndGetBonusContent} from "@/ui/components/swapWidget/SwapLockAnd
 
 export default function GetBonus() {
     return (
-        <>
-            <SVGGlobalDefs />
-            <main className="min-h-screen w-full p-3">
-                <Background />
-                <Header />
-                <section className="fixed flex justify-center items-center w-screen h-screen top-0 left-0">
-                    <SwapWidget title={"Swap"} icons={<CloseIcon/>}>
-                        <SwapLockAndGetBonusContent />
-                    </SwapWidget>
-                </section>
-            </main>
-        </>
+        <section className="fixed flex justify-center items-center w-screen h-screen top-0 left-0">
+            <SwapWidget title={"Swap"} icons={<CloseIcon/>}>
+                <SwapLockAndGetBonusContent />
+            </SwapWidget>
+        </section>
     );
 }

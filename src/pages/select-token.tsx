@@ -7,15 +7,8 @@ import {ModalSelectToken} from "@/ui/components/modal/select_token";
 
 export default function SelectToken() {
     return (
-        <>
-            <SVGGlobalDefs />
-            <main className="min-h-screen w-full p-3">
-                <Background />
-                <Header />
-                <ModalContainer>
-                    <ModalSelectToken />
-                </ModalContainer>
-            </main>
-        </>
+        <ModalContainer>
+            <ModalSelectToken />
+        </ModalContainer>
     );
 }

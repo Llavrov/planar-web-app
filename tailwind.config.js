@@ -28,7 +28,9 @@ module.exports = {
         slider: 'rgba(246, 246, 246, 0.04)',
         artboard: 'rgba(20, 20, 20, 1)',
         dark: 'rgba(23, 23, 23, 0.3)',
+        darkHeader: 'rgba(27, 27, 27, 1)',
         primaryCard: 'rgba(255, 255, 255, 0.96)',
+        blackGradient: 'linear-gradient(180deg, rgba(23, 23, 23, 0.5) 0%, rgba(23, 23, 23, 0) 100%)',
         'account-primary': 'rgba(255, 255, 255, 0.08)',
         'account-bg': 'rgba(248, 213, 168, 1)',
         'page-bg': 'rgba(13, 13, 13, 1)',
@@ -42,7 +44,7 @@ module.exports = {
         'brand-gradient': 'linear-gradient(140deg, #4E4FFF 13.25%, #9D5AFF 90%)',
         'purple-gradient': 'linear-gradient(140deg, #9D5AFF 13.25%, #C393FF 68%)',
         'error-gradient': 'linear-gradient(140deg, #6B45B0 13.25%, #B2344A 90%)',
-        'black-gradient': 'linear-gradient(180deg, rgba(23, 23, 23, 0.5) 0%, rgba(23, 23, 23, 0) 100%)',
+        blackGradient: 'linear-gradient(180deg, rgba(23, 23, 23, 0.5) 0%, rgba(23, 23, 23, 0) 100%)',
       },
       borderColor: {
         primary: 'rgba(255, 255, 255, 0.1)',
@@ -55,6 +57,25 @@ module.exports = {
       minHeight: {
         'card_m': '216px',
       }
+    },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      'bd': '1360px',
+      // => @media (min-width: 1360px) { ... }
     },
     spacing: {
       px: '1px',

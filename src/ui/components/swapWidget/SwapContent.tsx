@@ -7,21 +7,22 @@ import {LinkToConnect} from "@/ui/components/swapWidget/LinkToConnect";
 
 type Props = {
     error?: boolean;
+    setModal: () => void;
 };
 
 const CONNECT_WALLET = 'Connect Wallet to swap';
 const CHANGE_TOKENS = 'Change tokens, as route wasn’t founded'
 
-export function SwapContent({ error }: Props) {
+export function SwapContent({ error, setModal }: Props) {
     const [fromCoin, setFromCoin] = useState<TCoin>(COINS[0]);
     const [toCoin, setToCoin] = useState<TCoin>(COINS[1]);
 
     return (
         <>
             <section className={`flex flex-col gap-1`}>
-                <SwapCard coin={fromCoin} />
+                <SwapCard setModal={setModal} coin={fromCoin} />
                 <SwapIcon type={error ? 'error' : 'transfer'} />
-                <SwapCard coin={toCoin} bottom={true}/>
+                <SwapCard setModal={setModal} coin={toCoin} bottom={true}/>
             </section>
             <Button
                 type={error ? 'error' : 'primary'}

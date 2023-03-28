@@ -84,7 +84,7 @@ export function ChartComponent() {
     }, []);
 
     return (
-        <section className="flex relative items-center justify-center w-full bg-secondary rounded-2 h-full">
+        <section className="flex relative items-center justify-center bg-secondary rounded-2 h-full shrink">
             <section className="absolute top-4 left-4 flex justify-between w-[calc(100%-40px)]">
                 <Slider tabs={Tabs} />
                 <CloseIcon />

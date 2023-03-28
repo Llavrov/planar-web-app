@@ -4,7 +4,7 @@ import {ChartComponent} from "@/ui/components/chart/Chart";
 export function ChartContainer() {
 
     return (
-        <section className="max-h-[568px] h-full w-full m-auto">
+        <section className="shrink relative max-h-[568px] h-full w-full m-auto">
             <ChartComponent />
         </section>
     )
