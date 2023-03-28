@@ -1,6 +1,3 @@
-import { Background } from "@/ui/bg";
-import { SVGGlobalDefs } from "@/ui/svg/defs";
-import {Header} from "@/ui/components/header";
 import SwapWidget from "@/ui/components/swapWidget";
 import React from "react";
 import {CloseIcon} from "@/ui/buttons/close";
