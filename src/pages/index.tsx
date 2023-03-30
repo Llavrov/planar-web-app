@@ -12,8 +12,6 @@ import { ModalContainer } from "@/ui/components/modal";
 import { GradientButton } from "@/ui/buttons/gradient";
 import { COINS } from "@/ui/components/modal/select_token/coins";
 
-const inter = Inter({ subsets: ["latin"] });
-
 const icons = (
   <>
     <RetryIcon />

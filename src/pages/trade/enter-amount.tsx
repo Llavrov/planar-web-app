@@ -19,8 +19,6 @@ const emptyIcon = {
   label: "Select token",
 };
 
-const inter = Inter({ subsets: ["latin"] });
-
 const icons = (
   <>
     <RetryIcon />
