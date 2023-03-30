@@ -7,7 +7,7 @@ export default function GetBonus() {
     return (
         <section className="fixed flex justify-center items-center w-screen h-screen top-0 left-0">
             <SwapWidget title={"Swap"} icons={<CloseIcon onClick={() => ''}/>} >
-                <SwapLockAndGetBonusContent />
+                {/* <SwapLockAndGetBonusContent /> */}
             </SwapWidget>
         </section>
     );

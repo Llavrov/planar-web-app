@@ -58,7 +58,7 @@ export const externalTooltipHandler = (context: any) => {
 
         const tableHead = document.createElement('thead');
 
-        titleLines.forEach(title => {
+        titleLines.forEach((title: any) => {
             const tr = document.createElement('tr');
             tr.style.borderWidth = String(0);
 
@@ -74,7 +74,7 @@ export const externalTooltipHandler = (context: any) => {
         });
 
         const tableBody = document.createElement('tbody');
-        bodyLines.forEach((body: any, i) => {
+        bodyLines.forEach((body: any) => {
 
             const tr = document.createElement('tr');
             tr.style.backgroundColor = 'inherit';

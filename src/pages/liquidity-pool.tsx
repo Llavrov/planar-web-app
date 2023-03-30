@@ -10,7 +10,7 @@ export default function LiquidityPool() {
     return (
         <section className="fixed flex justify-center items-center w-screen h-screen top-0 left-0">
             <SwapWidget title={"Create new Liquidity pool"} icons={<CloseIcon onClick={() => ''} />} >
-                <LiquidityPoolContent />
+                {/* <LiquidityPoolContent /> */}
             </SwapWidget>
         </section>
     );
