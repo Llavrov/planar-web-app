@@ -29,7 +29,7 @@ export const Slider = ({ tabs }: Props) => {
 
   return (
     <section className="flex w-max gap-[12px] rounded-[12px] bg-slider backdrop-blur-slider">
-      {(currentOffset !== null && currentWidth !== null) ? (
+      {currentOffset !== null && currentWidth !== null ? (
         <GradientSliderBorder offsetX={currentOffset} width={currentWidth} />
       ) : null}
       <section className="z-10 flex">

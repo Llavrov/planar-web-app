@@ -12,7 +12,7 @@ export const CloseIcon = ({ onClick, className }: Props) => {
     <a
       onClick={onClick}
       className={classNames(
-        "cursor-pointer opacity-50 hover:opacity-100 transition-opacity",
+        "cursor-pointer opacity-50 transition-opacity hover:opacity-100",
         className
       )}
     >

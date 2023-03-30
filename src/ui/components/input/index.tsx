@@ -13,12 +13,12 @@ export const Input = ({ placeholder, iconLeft }: InputProps) => {
   };
 
   return (
-    <section className="relative w-full h-[50px]">
+    <section className="relative h-[50px] w-full">
       <input
         value={value}
         onChange={handleChange}
         className={classNames(
-          "py-3 pr-3 absolute outline-none w-full h-full bg-secondary rounded-input placeholder:text-input-text text-white text-text-s md:text-text-m leading-4", // 50 = 2 * 15px (padding) + 20px (input height)
+          "absolute h-full w-full rounded-input bg-secondary py-3 pr-3 text-text-s leading-4 text-white outline-none placeholder:text-input-text md:text-text-m", // 50 = 2 * 15px (padding) + 20px (input height)
           {
             "pl-3": !iconLeft,
             "pl-[45px]":

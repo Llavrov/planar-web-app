@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "start:web-app": "nx serve planar --prod",
-    "build:web-app": "nx build planar"
+    "build:web-app": "nx build planar",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.12",
@@ -18,16 +19,18 @@
     "@types/react-dom": "18.0.11",
     "chart.js": "^4.2.1",
     "classnames": "^2.3.2",
-    "eslint": "8.36.0",
+    "eslint": "^8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.59.3",
-    "typescript": "5.0.2"
+    "typescript": "^5.0.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",

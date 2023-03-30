@@ -1,14 +1,14 @@
-import React from 'react'
-import TopGraphic from './top.svg';
-import BottomGraphic from './bottom.svg';
+import React from "react";
+import TopGraphic from "./top.svg";
+import BottomGraphic from "./bottom.svg";
 
 export const Background = () => {
   return (
-      <section className='h-[0px]'>
-          <figure className='fixed -z-10 left-0 top-0 w-screen justify-between h-screen min-h-screen bg-page-bg flex flex-col'>
-              <TopGraphic className="w-full min-h-[240px]" />
-              <BottomGraphic className="w-full min-h-[240px]" />
-          </figure>
-      </section>
-  )
-}
+    <section className="h-[0px]">
+      <figure className="fixed left-0 top-0 -z-10 flex h-screen min-h-screen w-screen flex-col justify-between bg-page-bg">
+        <TopGraphic className="min-h-[240px] w-full" />
+        <BottomGraphic className="min-h-[240px] w-full" />
+      </figure>
+    </section>
+  );
+};

@@ -14,7 +14,7 @@ import WICCCoin from "@/ui/icons/coins/wicc.svg";
 export type TCoin = {
   icon: React.ReactNode;
   label: string;
-}
+};
 
 export const COINS = [
   {
@@ -51,11 +51,11 @@ export const COINS = [
   },
 ];
 
-type Props = {};
+interface Props {}
 
 const Coins = (props: Props) => {
   return (
-    <div className="flex gap-3 w-full flex-wrap">
+    <div className="flex w-full flex-wrap gap-3">
       {COINS.map((coin, index) => (
         <Coin key={index} icon={coin.icon} label={coin.label} />
       ))}

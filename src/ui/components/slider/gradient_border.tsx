@@ -8,7 +8,10 @@ type Props = {
 };
 
 const GradientSliderBorder = ({ offsetX, width }: Props) => {
-  const transform = useMemo(() => `translateX(${offsetX.toFixed(0)}px)`, [offsetX]);
+  const transform = useMemo(
+    () => `translateX(${offsetX.toFixed(0)}px)`,
+    [offsetX]
+  );
 
   return (
     <figure

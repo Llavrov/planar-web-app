@@ -1,21 +1,26 @@
-import React from 'react';
+import React from "react";
 
 type Props = {
-    params: Array<{
-        name: string;
-        value: string;
-    }>
+  params: Array<{
+    name: string;
+    value: string;
+  }>;
 };
 
-export function SwapWidgetParams({params}: Props) {
-    return (
-        <section className={`flex flex-col max-w-[460px] gap-2 w-full p-4 box-border`}>
-            {params.map(({name, value}) => (
-                <section key={name+value} className="flex flex-row w-full text-white justify-between">
-                    <span className="text-tetriary leading-3 text-text-s">{name}</span>
-                    <span className="text-white leading-3 text-text-s">{value}</span>
-                </section>
-            ))}
+export function SwapWidgetParams({ params }: Props) {
+  return (
+    <section
+      className={`box-border flex w-full max-w-[460px] flex-col gap-2 p-4`}
+    >
+      {params.map(({ name, value }) => (
+        <section
+          key={name + value}
+          className="flex w-full flex-row justify-between text-white"
+        >
+          <span className="text-text-s leading-3 text-tetriary">{name}</span>
+          <span className="text-text-s leading-3 text-white">{value}</span>
         </section>
-    )
+      ))}
+    </section>
+  );
 }
