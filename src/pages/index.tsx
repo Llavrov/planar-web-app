@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Background } from '@/ui/bg/index'
 import {Button} from "@/ui/buttons/Button";
 import SwapWidget from "@/ui/components/swapWidget";
 import {SwapContent} from "@/ui/components/swapWidget/SwapContent";
@@ -11,6 +9,8 @@ import {RetryIcon} from "@/ui/buttons/retry";
 import {SettingsIcon} from "@/ui/buttons/settings";
 import {ModalSelectToken} from "@/ui/components/modal/select_token";
 import {ModalContainer} from "@/ui/components/modal";
+import {GradientButton} from "@/ui/buttons/gradient";
+import {COINS} from "@/ui/components/modal/select_token/coins";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +22,7 @@ const icons = (
 
 export default function Home() {
   const [show, setShow] = useState(false);
+  const [gradientTitle, setGradientTitle] = useState('$76.46M TVL');
 
   return (
     <>
@@ -38,8 +39,8 @@ export default function Home() {
         <section className="flex flex-col gap-4 m-auto justify-center items-center w-full h-full max-w-[1360px]">
           <section className="flex flex-col md:flex-row justify-between w-full">
             <span className="text-white mt-[16px] md:m-0 text-heading-s md:text-heading-l">Trade</span>
-            <section className="flex mt-[26px] mb-[26px] md:m-0 flex-row gap-2 w-full md:w-[388px]">
-              <Button classNames={'md:max-w-[157px]'} onClick={() => {}} title={'Watch tutorial'} type={'primary'} />
+            <section className="flex mt-[26px] mb-[26px] md:m-0 flex-row gap-2 w-full md:w-[378px]">
+              <GradientButton handleClick={() => {}} title={gradientTitle} />
               <Button classNames={'md:max-w-[221px]'} onClick={() => {}} title={'Watch tutorial'} type={'secondary'} icon={'video'} />
             </section>
           </section>
@@ -48,7 +49,7 @@ export default function Home() {
           </section>
           <section className="flex flex-col md:flex-row relative gap-4 box-border justify-center items-center w-full">
             <SwapWidget title={"Swap"} icons={icons}>
-              <SwapContent error={false} setModal={() => setShow(!show)} />
+              <SwapContent fromCoin={COINS[0]} toCoin={COINS[1]} error={false} setModal={() => setShow(!show)} />
             </SwapWidget>
             <ChartContainer />
           </section>

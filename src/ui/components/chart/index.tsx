@@ -4,7 +4,7 @@ import {ChartComponent} from "@/ui/components/chart/Chart";
 export function ChartContainer() {
 
     return (
-        <section className="shrink relative max-h-[568px] h-full w-full m-auto">
+        <section className="flex items-start shrink relative max-h-[568px] h-screen mr-auto ml-auto w-full">
             <ChartComponent />
         </section>
     )

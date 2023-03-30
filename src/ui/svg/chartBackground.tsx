@@ -286,6 +286,5 @@ export function ChartBackground() {
                 </radialGradient>
             </defs>
         </svg>
-
     )
 }

@@ -18,13 +18,13 @@ const CONNECT_WALLET = 'Connect Wallet to swap';
 const CHANGE_TOKENS = 'Change tokens, as route wasn’t founded'
 
 export function SwapContent({
-    error,
-    setModal,
-    fromCoin: fCoin,
-    toCoin: tCoin,
-    buttonTitle = CONNECT_WALLET,
-    linkTitle = 'Connect wallet to farm this pair'
-}: Props) {
+        error,
+        setModal,
+        fromCoin: fCoin,
+        toCoin: tCoin,
+        buttonTitle = CONNECT_WALLET,
+        linkTitle = 'Connect wallet to farm this pair'
+    }: Props) {
     const [fromCoin, setFromCoin] = useState<TCoin>(fCoin);
     const [toCoin, setToCoin] = useState<TCoin>(tCoin);
 

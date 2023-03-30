@@ -1,16 +1,18 @@
-const getOrCreateTooltip = (chart: any) => {
+export const getOrCreateTooltip = (chart: any) => {
     let tooltipEl = chart.canvas.parentNode.querySelector('div');
 
     if (!tooltipEl) {
         tooltipEl = document.createElement('div');
-        tooltipEl.style.background = 'rgba(0, 0, 0, 0.7)';
-        tooltipEl.style.borderRadius = '3px';
+        tooltipEl.style.background = 'rgba(29, 27, 35, 0.5)';
+        tooltipEl.style.backdropFilter = 'blur(12px)';
+        tooltipEl.style.borderRadius = '10px';
         tooltipEl.style.color = 'white';
         tooltipEl.style.opacity = 1;
         tooltipEl.style.pointerEvents = 'none';
         tooltipEl.style.position = 'absolute';
         tooltipEl.style.transform = 'translate(-50%, 0)';
-        tooltipEl.style.transition = 'all .1s ease';
+        tooltipEl.style.transition = 'all .3s ease';
+        tooltipEl.style.border = '1px solid rgba(255, 255, 255, 0.1)'
         tooltipEl.style.minWidth = '180px';
 
         const table = document.createElement('table');
@@ -22,6 +24,21 @@ const getOrCreateTooltip = (chart: any) => {
 
     return tooltipEl;
 };
+
+const pointElement = (coords: any) => {
+    const point = document.createElement('div');
+    point.style.width = '18px';
+    point.style.height = '18px';
+    point.style.borderRadius = '9px';
+    point.style.transition = '1s'
+    point.style.border = '2px solid white';
+    point.style.background = 'rgba(78, 79, 255, 1)';
+    point.style.position = 'absolute';
+    point.style.top = 62 + 'px';
+    point.style.left = 80 +  'px';
+
+    return point;
+}
 
 export const externalTooltipHandler = (context: any) => {
     // Tooltip Element
@@ -41,12 +58,12 @@ export const externalTooltipHandler = (context: any) => {
 
         const tableHead = document.createElement('thead');
 
-        titleLines.forEach((title: string) => {
+        titleLines.forEach(title => {
             const tr = document.createElement('tr');
-            tr.style.borderWidth = '0';
+            tr.style.borderWidth = String(0);
 
             const th = document.createElement('th');
-            th.style.borderWidth = '0';
+            th.style.borderWidth = String(0);
             th.style.fontWeight = '300';
             th.style.fontSize = '12px';
             const text = document.createTextNode(title);
@@ -57,13 +74,14 @@ export const externalTooltipHandler = (context: any) => {
         });
 
         const tableBody = document.createElement('tbody');
-        bodyLines.forEach((body: string) => {
+        bodyLines.forEach((body: any, i) => {
+
             const tr = document.createElement('tr');
             tr.style.backgroundColor = 'inherit';
-            tr.style.borderWidth = '0';
+            tr.style.borderWidth = String(0);
 
             const td = document.createElement('td');
-            td.style.borderWidth = '0';
+            td.style.borderWidth = String(0);
             td.style.fontSize = '14px';
 
             const text = document.createTextNode('Price: ' + body);
@@ -83,6 +101,15 @@ export const externalTooltipHandler = (context: any) => {
         // Add new children
         tableRoot.appendChild(tableHead);
         tableRoot.appendChild(tableBody);
+
+        const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
+
+        tableRoot
+            .appendChild(
+                pointElement({
+                    x: positionX,
+                    y: positionY,
+                }));
     }
 
     const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
@@ -90,7 +117,7 @@ export const externalTooltipHandler = (context: any) => {
     // Display, position, and set styles for font
     tooltipEl.style.opacity = 1;
     tooltipEl.style.left = positionX + tooltip.caretX + 'px';
-    tooltipEl.style.top = positionY - 60 + tooltip.caretY + 'px';
+    tooltipEl.style.top = positionY - 70 + tooltip.caretY + 'px';
     tooltipEl.style.font = tooltip.options.bodyFont.string;
     tooltipEl.style.padding = tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
 };

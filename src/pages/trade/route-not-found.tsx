@@ -9,8 +9,14 @@ import {RetryIcon} from "@/ui/buttons/retry";
 import {SettingsIcon} from "@/ui/buttons/settings";
 import {ModalSelectToken} from "@/ui/components/modal/select_token";
 import {ModalContainer} from "@/ui/components/modal";
+import EmptyIcon from "@/ui/icons/coins/empty.svg";
 import {GradientButton} from "@/ui/buttons/gradient";
 import {COINS} from "@/ui/components/modal/select_token/coins";
+
+const emptyIcon = {
+    icon: EmptyIcon,
+    label: 'Select token',
+}
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +26,7 @@ const icons = (
         <SettingsIcon />
     </>);
 
-export default function Trade() {
+export default function RouteNotFound() {
     const [show, setShow] = useState(false);
     const [gradientTitle, setGradientTitle] = useState('$76.46M TVL');
 
@@ -49,7 +55,14 @@ export default function Trade() {
                     </section>
                     <section className="flex flex-col md:flex-row relative gap-4 box-border justify-center items-center w-full">
                         <SwapWidget title={"Swap"} icons={icons}>
-                            <SwapContent fromCoin={COINS[0]} toCoin={COINS[1]} error={false} setModal={() => setShow(!show)} />
+                            <SwapContent
+                                fromCoin={COINS[5]}
+                                toCoin={COINS[3]}
+                                error={true}
+                                setModal={() => setShow(!show)}
+                                buttonTitle={'Select token to do the swap'}
+                                linkTitle={'Be the first to provide liquidity to this pair'}
+                            />
                         </SwapWidget>
                         <ChartContainer />
                     </section>

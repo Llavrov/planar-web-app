@@ -99,6 +99,7 @@ module.exports = {
       'text-sm': ['14px'],
       'text-m': ['16px'],
       'text-l': ['18px'],
+      'text-l-bold': ['18px', { fontWeight: '600' }],
       'accent-l': ['18px', { fontWeight: '500' }],
     },
     borderRadius: {

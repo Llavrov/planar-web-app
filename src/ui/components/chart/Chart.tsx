@@ -12,8 +12,8 @@ import {
 import { Line } from "react-chartjs-2";
 import {Slider} from "@/ui/components/slider";
 import {CloseIcon} from "@/ui/buttons/close";
-import {ChartBackground} from "@/ui/svg/chartBackground";
 import {externalTooltipHandler} from "@/ui/components/chart/externalTooltipHandler";
+import Image from "next/image";
 
 ChartJS.register(
     CategoryScale, // x-axis
@@ -37,7 +37,7 @@ function getGradient() {
     // @ts-ignore
     const ctx = canvas?.getContext('2d');
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, 'rgba(161, 88, 255, 0.82)');
+    gradient.addColorStop(0, 'rgba(161, 88, 255, 0.52)');
     gradient.addColorStop(1, 'rgba(78, 79, 255, .03)');
 
     return gradient;
@@ -73,47 +73,50 @@ const options = {
 };
 
 const LABELS: Array<string> = [];
-LABELS.length = 30;
-LABELS.fill('Mar 7, 2023, 12:53:31 a.m.');
+LABELS.length = 29;
+LABELS.fill('Mar 7, 2023, 12:');
 
 const POINTS = [9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27, 9, 10, 12, 19, 10, 8, 10, 17, 16, 24, 34, 22, 25, 23, 27];
 
+const CHART_DATASET = () => ({
+    labels: LABELS,
+    datasets: [{
+        data: POINTS,
+        fill: 'start',
+        pointHoverBackgroundColor: 'rgba(78, 79, 255, 1)',
+        pointHoverBorderColor: 'rgba(255, 255, 255, 1)',
+        backgroundColor: getGradient(),
+        hoverBorderWidth: 0.1,
+        borderColor: '#9D5AFF',
+        borderWidth: 1,
+        tension: 0.5,
+        pointDotRadius: 1,
+        pointDotStrokeWidth: 8,
+        pointHitDetectionRadius: 20,
+        pointRadius: .1
+    }]
+})
+
 export function ChartComponent() {
     const [chartData, setChartData] = useState<any>({datasets:[]});
-
-    const [chartOptions, setChartOptions] = useState(options);
+    const [chartOptions, setChartOptions] = useState<any>({});
 
     useEffect(() => {
-
-        setChartData({
-            labels: LABELS,
-            datasets: [{
-                    data: POINTS,
-                    fill: 'start',
-                pointHoverBackgroundColor: '#EC932F',
-                pointHoverBorderColor: '#EC932F',
-                yAxisID: 'y-axis-2',
-                    backgroundColor: getGradient(),
-                    borderColor: '#9D5AFF',
-                    borderWidth: 1,
-                    tension: 0.5,
-                    pointRadius: .1
-                }]
-        });
+        setChartData(CHART_DATASET());
         setChartOptions(options);
     }, []);
 
     return (
-        <section className="flex relative items-end justify-center bg-secondary rounded-2 h-full max-h-[574px] shrink">
-            <section className="absolute top-4 left-4 flex justify-between w-[calc(100%-40px)]">
+        <section className="flex relative items-end justify-center bg-secondary rounded-2 w-full h-full min-h-[210px] max-h-[574px] shrink">
+            <section className="absolute top-2 md:top-4 left-4 flex justify-between w-[calc(100%-40px)]">
                 <Slider tabs={Tabs} />
                 <CloseIcon onClick={() => ''} />
             </section>
 
             {/* @ts-ignore */}
-            <Line id={'canvas'} data={chartData} options={options}/>
+            <Line id={'canvas'} data={chartData} options={chartOptions}/>
             <section className="absolute w-full h-full overflow-hidden -z-[1]">
-                <ChartBackground />
+                <Image className="w-full" src="/chartBackground.svg" alt="chart" width={1000} height={1000}/>
             </section>
         </section>
     )

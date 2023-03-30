@@ -10,11 +10,22 @@ import styles from "@/ui/components/swapWidget/swap.module.scss";
 
 type Props = {
     error?: boolean;
+    setModal?: () => void;
+    fromCoin: TCoin;
+    toCoin: TCoin;
+    buttonTitle?: string;
+    linkTitle?: string
 };
 
-export function SwapLockAndGetBonusContent({ error }: Props) {
-    const [fromCoin, setFromCoin] = useState<TCoin>(COINS[0]);
-    const [toCoin, setToCoin] = useState<TCoin>(COINS[1]);
+export function SwapLockAndGetBonusContent({
+    error,
+    setModal,
+    fromCoin: fCoin,
+    toCoin: tCoin,
+    linkTitle = 'Connect wallet to farm this pair'
+}: Props) {
+    const [fromCoin, setFromCoin] = useState<TCoin>(fCoin);
+    const [toCoin, setToCoin] = useState<TCoin>(tCoin);
     const [active, setActive] = useState(false);
 
     return (

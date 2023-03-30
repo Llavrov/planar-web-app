@@ -7,7 +7,7 @@ type Props = {
 
 export function LinkToConnect({href, title}: Props) {
     return (
-        <a href={href} className={"text-text-s text-tetriary underline underline-offset-1 w-full text-center"}>
+        <a href={href} className={"text-text-s md:text-text-l text-tetriary underline underline-offset-1 w-full text-center"}>
             {title}
         </a>
     )
