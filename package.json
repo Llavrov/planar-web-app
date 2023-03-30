@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "start:web-app": "nx serve planar --prod",
-    "build:web-app": "nx build planar"
+    "build:web-app": "nx build planar",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.12",

@@ -3,18 +3,18 @@ import SettingsIconSVG from "@/ui/icons/ui/settings.svg";
 import classNames from "classnames";
 
 type Props = {
-    className?: string;
+  className?: string;
 };
 
 export const SettingsIcon = ({ className }: Props) => {
-    return (
-        <a
-            className={classNames(
-                "cursor-pointer opacity-50 hover:opacity-100 transition-opacity",
-                className
-            )}
-        >
-            <SettingsIconSVG className="w-icon-2" />
-        </a>
-    );
+  return (
+    <a
+      className={classNames(
+        "cursor-pointer opacity-50 transition-opacity hover:opacity-100",
+        className
+      )}
+    >
+      <SettingsIconSVG className="w-icon-2" />
+    </a>
+  );
 };

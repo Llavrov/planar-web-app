@@ -4,7 +4,7 @@ import SliderTabGradientDefs from "./gradients/slider";
 
 export const SVGGlobalDefs = () => {
   return (
-    <section className="h-[0px] fixed -z-10">
+    <section className="fixed -z-10 h-[0px]">
       <PurpleGradient />
       <SliderTabGradientDefs />
     </section>

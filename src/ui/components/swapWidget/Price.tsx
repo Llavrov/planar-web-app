@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 type Props = {
-    value: string;
-    price: string;
-}
+  value: string;
+  price: string;
+};
 
-export function SwapCardPrice({value, price}: Props) {
-    return (
-        <section className={'flex flex-col gap-1'}>
-            <span className="text-primary text-heading-s">{value}</span>
-            <span className="text-secondary text-text-s">${price}</span>
-        </section>
-    )
+export function SwapCardPrice({ value, price }: Props) {
+  return (
+    <section className={"flex flex-col gap-1"}>
+      <span className="text-heading-s text-primary">{value}</span>
+      <span className="text-text-s text-secondary">${price}</span>
+    </section>
+  );
 }

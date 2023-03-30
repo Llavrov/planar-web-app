@@ -2,14 +2,14 @@ import classNames from "classnames";
 import React from "react";
 
 type Props = {
-  className?: string
+  className?: string;
 };
 
 export const SliderGradientBorder = ({ className }: Props) => {
   return (
     <svg
       viewBox="0 0 97 43"
-      className={classNames('absolute left-0 top-0', className)}
+      className={classNames("absolute left-0 top-0", className)}
       width="100%"
       height="100%"
       preserveAspectRatio="none"
