@@ -51,7 +51,7 @@ export default function BallancaIncefluent() {
             <section className="mt-[26px] mb-[26px] flex w-full flex-row justify-between gap-2 md:m-0 md:w-[378px]">
               <GradientButton handleClick={() => {}} title={gradientTitle} />
               <Button
-                classNames={"max-w-[182px] md:max-w-[221px]"}
+                className="max-w-[182px] md:max-w-[221px]"
                 onClick={() => {}}
                 fontSize={"text-text-s md:text-text-m"}
                 title={"Watch tutorial"}

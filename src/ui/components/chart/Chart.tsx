@@ -32,10 +32,10 @@ enum Tabs {
 }
 
 function getGradient() {
-  const canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("canvas") as HTMLCanvasElement;
 
-  // @ts-ignore
-  const ctx = canvas?.getContext("2d");
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
   const gradient = ctx.createLinearGradient(0, 0, 0, 400);
   gradient.addColorStop(0, "rgba(161, 88, 255, 0.52)");
   gradient.addColorStop(1, "rgba(78, 79, 255, .03)");
@@ -118,7 +118,6 @@ export function ChartComponent() {
         <CloseIcon onClick={() => ""} />
       </section>
 
-      {/* @ts-ignore */}
       <Line id={"canvas"} data={chartData} options={chartOptions} />
       <section className="absolute -z-[1] h-full w-full overflow-hidden">
         <Image

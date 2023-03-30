@@ -4,7 +4,7 @@ import styles from "./swap.module.scss";
 import InfoIcon from "@/ui/icons/ui/info.svg";
 import { Arrow } from "@/ui/svg/arrow";
 
-type Props = {};
+interface Props {}
 
 export function SelectPool(props: Props) {
   return (

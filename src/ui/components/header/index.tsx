@@ -5,7 +5,7 @@ import { AccountIcon } from "@/ui/components/header/AccountIcon";
 import { AccountIconSvg } from "@/ui/svg/platforms";
 import MenuIconSVG from "@/ui/icons/ui/menu.svg";
 
-type Props = {};
+interface Props {}
 
 const TABS = ["Trade", "Earn", "Launchpad"];
 
@@ -46,7 +46,7 @@ export function Header(props: Props) {
             <Button
               onClick={() => setWallet("wallet")}
               title={"Connect wallet"}
-              classNames="max-w-[147px] text-text-m pl-[16px] pr-[16px] h-[44px]"
+              className="max-w-[147px] text-text-m pl-[16px] pr-[16px] h-[44px]"
             />
           )}
         </section>

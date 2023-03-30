@@ -18,8 +18,7 @@ export const BaseModal = ({
   maxWidth,
   maxHeight,
 }: Props) => {
-  // @ts-ignore
-  const handleClickBaseModal = (event) => {
+  const handleClickBaseModal = (event: React.MouseEvent) => {
     event.stopPropagation();
   };
 

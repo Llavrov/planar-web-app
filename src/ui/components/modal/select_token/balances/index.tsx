@@ -5,7 +5,7 @@ import USDCIcon from "@/ui/icons/coins/usdc.svg";
 import DAIIcon from "@/ui/icons/coins/dai.svg";
 import WETHIcon from "@/ui/icons/coins/wicc.svg";
 
-type Props = {};
+interface Props {}
 
 const balances = [
   {

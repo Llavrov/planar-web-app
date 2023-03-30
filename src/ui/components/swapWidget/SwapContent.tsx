@@ -4,6 +4,7 @@ import { SwapCard } from "@/ui/components/swapWidget/SwapCard";
 import { SwapIcon } from "@/ui/components/swapWidget/SwapIcon";
 import { Button } from "@/ui/buttons/Button";
 import { LinkToConnect } from "@/ui/components/swapWidget/LinkToConnect";
+import classNames from "classnames";
 
 type Props = {
   error?: boolean;
@@ -41,7 +42,9 @@ export function SwapContent({
         fontSize={"text-text-s md:text-text-l"}
         onClick={() => alert("Connect Wallet to swap")}
         title={error ? CHANGE_TOKENS : buttonTitle}
-        classNames={error ? "opacity-50" : ""}
+        className={classNames({
+          "opacity-50" : error
+        })}
       />
       <LinkToConnect title={linkTitle} href={"/trade"} />
     </>

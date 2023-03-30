@@ -1,6 +1,6 @@
 import React from "react";
 
-type Props = {};
+interface Props {}
 
 const PERCENTS = ["25%", "50%", "75%", "100%"];
 

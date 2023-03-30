@@ -43,7 +43,7 @@ export default function Trade() {
             <section className="mt-[26px] mb-[26px] flex w-full flex-row gap-2 md:m-0 md:w-[378px]">
               <GradientButton handleClick={() => {}} title={gradientTitle} />
               <Button
-                classNames={"md:max-w-[221px]"}
+                className="md:max-w-[221px]"
                 onClick={() => {}}
                 title={"Watch tutorial"}
                 type={"secondary"}

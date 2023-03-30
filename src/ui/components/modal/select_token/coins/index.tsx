@@ -51,7 +51,7 @@ export const COINS = [
   },
 ];
 
-type Props = {};
+interface Props {}
 
 const Coins = (props: Props) => {
   return (
